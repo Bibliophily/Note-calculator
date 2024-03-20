@@ -1,0 +1,33 @@
+#include <stdio.h>
+int main(void) {
+	int grade, student=1;
+	
+	puts("Please enter the students grade.");
+	scanf("%d", &grade);
+	
+
+	if(grade>100 && grade<-1) {
+		puts("Please enter a certain grade.");
+		grade==0;
+	}
+	while(grade!=-1) {
+		if(grade<60 && grade>=0) {
+	        puts("You have failed.\nNote:FF"); }
+	    else if(grade>=60 && grade<70) {
+	        puts("Note:DD"); }
+	            else if(grade>=70 && grade<80) {
+	                puts("Note:CC");
+					}
+					else if(grade>=80 && grade<=90) {
+					    puts("Note:BB"); }
+					    	else if(grade>=90 && grade<=100) {
+					    	   	puts("Note:AA");
+							   }
+							   puts("Enter grade:For exit=-1");
+							   scanf("%d", &grade);
+							   if(grade>=0 && grade<=100) {
+							   	student = student + 1;
+							   }
+							   printf("%s %d\n", "Number of the students entered:", student);
+						}
+	    }
